@@ -1,0 +1,35 @@
+/* RESET */
+body,div,form,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,em,p,span,textarea,pre,label,fieldset,th,td,button,a,input,select,hr{margin:0;padding:0;font-family:Arial, dotum;}
+body{line-height:1;}
+em,address{font-style:normal;}
+ol,ul,dl{list-style:none;}
+fieldset,img,hr,button{border:0;}
+img{vertical-align:top;}
+a{text-decoration:none;color:#2c2c2c;}
+a:hover{text-decoration:none;}
+button{overflow:visible;margin:0;padding:0;background:none;border-radius:0;cursor:pointer;outline:none;}
+
+/* START */
+.rpsWrap{position:relative;width:600px;margin:10px auto;padding:0 0 60px 0;background:#9edae5;border-right:4px solid #8bc2ce;border-bottom:4px solid #8bc2ce;border-radius:50px;text-align:center;}
+/* viewWrap */
+.randomWrap{position:relative;height:480px;margin:0 auto;}
+.randomWrap > div{position:absolute;top:50%;left:50%;box-sizing:border-box;width:500px;height:380px;margin-top:-190px;margin-left:-250px;padding:30px 0;background:#eee;border:10px solid #93cdd8;border-radius:50px;z-index:0;}
+.randomWrap > div.on{z-index:1;}
+.randomWrap > div > img{width:300px;height:auto;}
+.scoreWrap{position:absolute;top:80px;left:80px;text-align:left;z-index:1;}
+.scoreAdd{display:inline-block;position:relative;width:20px;height:20px;margin:0 2px;background:#333;border-radius:100%;}
+.lifeWrap{position:absolute;top:80px;right:80px;padding-top:5px;z-index:1;}
+.life{display:inline-block;position:relative;width:14px;height:14px;margin:0 7px;background:#e0002b;transform:rotate(-45deg);}
+.life:before, .life:after{content:'';position:absolute;width:14px;height:14px;background:#e0002b;border-radius:50%;}
+.life:before{top:-7px;left:0;}
+.life:after{top:0;left:7px;}
+/* btnWrap */
+.btnRpsWrap{margin-left:200px;}
+.btnRpsWrap > button{display:inline-block;width:60px;height:60px;margin:0 10px;border-radius:50%;font-family:'맑은 고딕', sans-serif;font-size:18px;font-weight:bold;color:#fff;}
+.btnScissors{background:#f1365b;box-shadow:2px 3px 1px #e0002b;}
+.btnRock{background:#fbbc62;box-shadow:2px 3px 1px #d09b51;}
+.btnPaper{background:#009d55;box-shadow:2px 3px 1px #016939;}
+.btnReset{position:absolute;top:475px;left:100px;width:80px;height:80px;}
+.btnReset:before, .btnReset:after{position:absolute;left:0;top:25px;width:80px;height:30px;background:#333;font-family:'맑은 고딕', sans-serif;font-size:24px;font-weight:bold;color:#fff;line-height:28px;}
+.btnReset:before{content:'R';z-index:2;box-shadow:2px 0 1px #222;}
+.btnReset:after{content:'';z-index:1;box-shadow:2px -2px 1px #222;transform:rotate(90deg);}

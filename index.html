@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>가위바위보게임</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+	<!-- 가위바위보 게임 -->
+	<div class="rpsWrap">
+		<div class="viewWrap">
+			<div class="randomWrap">
+				<div><img src="./images/scissors.png" alt="가위"></div>
+				<div><img src="./images/rock.png" alt="바위"></div>
+				<div><img src="./images/paper.png" alt="보"></div>
+			</div>
+			<!-- 점수 -->
+			<div class="scoreWrap"></div>
+			<!-- 생명 -->
+			<div class="lifeWrap"></div>
+		</div>
+		<div class="btnWrap">
+			<div class="btnRpsWrap">
+				<button type="button" class="btnScissors">가위</button>
+				<button type="button" class="btnRock">바위</button>
+				<button type="button" class="btnPaper">보</button>
+			</div>
+			<button type="button" class="btnReset">RESET</button>
+		</div>
+	</div>
+</body>
+</html>
